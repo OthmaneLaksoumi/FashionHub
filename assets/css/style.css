@@ -1,0 +1,627 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+:root {
+    --margin-top-bet-section: 10vw;
+    --padding-top-of-sections: 3.5vw;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    margin-bottom: var(--padding-top-of-sections);
+}
+
+header * {
+    margin: 0px;
+}
+
+header ul {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+
+header a {
+    color: black;
+    font-weight: bold;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+@media (max-width: 767px) {
+    header ul {
+        display: none;
+    }
+
+    header h2 {
+        font-size: 3vw;
+    }
+}
+
+/* End Of Header */
+
+
+/* New Collection Section */
+
+
+.new-collection-section {
+    width: 100%;
+    background-color: #eee;
+    padding: var(--padding-top-of-sections);
+    margin-top: var(--margin-top-bet-section);
+}
+
+.new-collection-section h2 {
+    text-align: center;
+    margin: 0px 0px 3vw 0px;
+    font-size: 4vw;
+}
+
+.new-collection-section p {
+    text-align: center;
+    margin: 0px 0px 3vw 0px;
+    font-size: 2vw;
+}
+
+.new-collection-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.new-collection-section div img {
+    width: 25vw;
+    border-radius: 2.3vw;
+}
+
+.new-collection-section .new-collection-sweaters div {
+    background-color: white;
+    width: 25vw;
+    height: 2.7vw;
+    text-align: center;
+    border-radius: 35px 0 35px 0;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-collection-section .new-collection-sweaters div a {
+    font-size: 1.5vw;
+    color: black;
+}
+
+
+
+@media (max-width: 767px) {
+    .new-collection-section .hidden {
+        display: none;
+    }
+
+    .new-collection-section .new-collection-list .new-collection-sweaters a img {
+        width: 35vw;
+        border-radius: 4vw;
+    }
+
+    .new-collection-section .new-collection-sweaters div {
+        width: 35vw;
+        border-radius: 4.6vw 0;
+
+    }
+
+    .new-collection-section .new-collection-sweaters div a {
+        font-size: 2.5vw;
+    }
+
+}
+
+/* End New Collection Section */
+
+
+/* Best Seller Section */
+
+.best-seller-section {
+    width: 100%;
+    background-color: #eee;
+    padding: var(--padding-top-of-sections);
+    margin-top: var(--margin-top-bet-section);
+}
+
+.best-seller-section h2 {
+    text-align: center;
+    margin: 0px 0px 6vw 0px;
+    font-size: 4vw;
+}
+
+.best-seller-section p {
+    text-align: justify;
+    margin: 0vw 10vw 7vw;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.parent * {
+    width: 30vw;
+}
+
+.parent img {
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+}
+
+.parent .box {
+    background-color: white;
+    padding: 1vw 0px 3vw 3vw;
+    font-size: 2.8vw;
+
+}
+
+.parent .box .star-list {
+    color: #FFAF37;
+}
+
+.parent .box .product-title {
+    margin-bottom: 2vw;
+    font-weight: bold;
+}
+
+.parent .box .before-price {
+    color: #c4c4c4;
+}
+
+.parent-best {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.best-seller-section .see-more {
+    background-color: black;
+    width: fit-content;
+    padding: 2vw;
+    border-radius: 2vw;
+    margin: 5vw auto;
+    font-size: 2vw;
+}
+
+.best-seller-section .see-more a {
+    color: white;
+}
+
+/* End Best Seller Section */
+
+
+
+/* Our Product Section */
+
+
+.our-product-section {
+    width: 100%;
+    background-color: #eee;
+    padding: var(--padding-top-of-sections);
+    margin-top: var(--margin-top-bet-section);
+}
+
+.our-product-section h2 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+
+.nav-bar-product ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    padding: 0px;
+
+}
+
+.nav-bar-product ul li {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0px 2vw;
+}
+
+.nav-bar-product ul li a {
+    color: black;
+}
+
+.product-cart img {
+    width: 18.5%;
+    border-top-right-radius: 1.6vw;
+    border-top-left-radius: 1.6vw;
+}
+
+.nav-bar-product {
+    margin-bottom: 5vw;
+}
+
+.product-cart .box * {
+    margin: 0px;
+    font-size: 1.5vw;
+
+}
+
+.product-cart .box {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0vw 2vw 2vw;
+}
+
+.product-cart .box h4,
+.product-cart .box span {
+    font-size: 2vw;
+}
+
+.buy-now {
+    width: fit-content;
+    background-color: #D77575;
+    color: white;
+    padding: 1vw;
+    border-radius: 1.5vw;
+}
+
+.product-cart .box {
+    background-color: white;
+}
+
+.product-cart .box .star-list {
+    color: #FFAF37;
+}
+
+.product-cart img,
+.product-cart .box {
+    width: 18.5vw;
+}
+
+.list-our-product {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vw;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 2vw;
+}
+
+.load-more a {
+    font-size: 2.5vw;
+    font-family: 'Inder', 'Open Sans:ital';
+    color: black;
+}
+
+@media (max-width: 767px) {
+
+    .list-our-product .cart-4,
+    .list-our-product .cart-3 {
+        display: none;
+    }
+
+    .list-our-product {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+/* Testimoinage Section */
+
+.testimoinage-section h4 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.testimoinage-section p {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.testimoinage-box {
+    background-color: #F5F5F5;
+    text-align: center;
+    width: 32.4%;
+    padding: 0vw 2vw 1vw 2vw;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimoinage-box h6 {
+    font-size: 1.3vw;
+    margin-bottom: 0px;
+    margin-top: 2vw;
+}
+
+.testimoinage-box img {
+    width: 5.5vw;
+    border-radius: 50%;
+}
+
+.testimoinage-section .testimoinage-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* End Testimoinage Section */
+
+/* Footer Section */
+
+footer {
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 3vw 0 0 0;
+}
+
+footer li {
+    display: inline-block;
+    font-size: 2vw;
+    margin: 0px 2vw;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    padding-bottom: 3vw;
+}
+
+
+/* Catalog Page */
+
+/* Polos Section */
+.polos {
+    background-color: #eee;
+    padding: var(--padding-top-of-sections);
+    margin-top: var(--margin-top-bet-section);
+
+
+}
+
+.polos h2 {
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.last-catalog {
+    margin-bottom: 15vw;
+}
+
+
+
+/* End Polos Section */
+
+/* End Catalog Page */
+
+
+
+
+/* Sign in page */
+
+.sign-section {
+    background-color: #F5F5F5;
+    padding: 10px;
+    position: relative;
+}
+
+.sign-section h2 {
+    font-size: 4.2vw;
+    margin-left: 4vw;
+}
+
+.sign-section .sign-up {
+    position: absolute;
+    right: 8vw;
+    top: 6vw;
+    font-size: 3.3vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+    width: 19%;
+}
+
+.sign-button {
+    font-size: 2.5vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+    width: 19%;
+    font-weight: bold;
+}
+
+.important {
+    color: red;
+    font-size: 3vw;
+}
+
+.sign-section form {
+    padding: 4vw 5vw;
+}
+
+.sign-section form input {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: solid black;
+    border-width: 0px 0px 0.01vw 0px;
+    background-color: transparent;
+    margin-bottom: 7vw;
+    font-size: 2vw;
+}
+
+.sign-section a {
+    color: white;
+}
+
+.sign-section form label {
+    display: inline-block;
+    margin-bottom: 2vw;
+    font-size: 2.1vw;
+}
+
+.sign-section input:focus {
+    background-color: rgba(245, 245, 245, 20%);
+}
+
+
+/* End Sign in page */
+
+
+
+/* Sign Up page */
+
+
+#first-name,
+#last-name {
+    width: 35vw;
+}
+
+.fl-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    visibility: hidden;
+    cursor: pointer;
+    /* display: none; */
+}
+
+#myLinks {
+    display: none;
+}
+
+
+
+/* End Sign Up page */
+
+/* Menu Burger */
+
+@media (max-width: 767px) {
+
+    .icon {
+        /* display: blo
+        ck; */
+        visibility: visible;
+    }
+
+    #myLinks {
+        list-style: none;
+        margin: 0 0 5vw;
+        padding: 0;
+    }
+
+    #myLinks li {
+        text-align: center;
+        background-color: #e4e2e2;
+        padding: 1vw;
+        margin: 1vw;
+
+    }
+
+    #myLinks a {
+        color: black;
+    }
+
+
+
+}
+
+/*End Menu Burger */
+
+
+/* Faq section */
+
+.faq-section {
+    background-color: #f5f5f5;
+    padding: 0px 10vw 5vw;
+    margin-bottom: var(--margin-top-bet-section);
+}
+
+.faq-section h2 {
+    text-align: center;
+    padding-top: 5vw;
+    font-size: 3vw;
+
+}
+
+.faq-section h4,
+.faq-section p {
+    padding: 2vw;
+}
+
+
+
+.question {
+    background-color: #e4e2e2;
+    width: 100%;
+    cursor: pointer;
+}
+
+.answer {
+    background-color: #e4e2e2;
+}
+
+
+.question-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2vw;
+}
+
+.question-answer p {
+    display: none;
+    /* visibility: hidden; */
+}
+
+
+.sign-section input.valid {
+    border: solid green 1px;
+}
+
+.sign-section input.invalid {
+    border: solid red 1px;
+
+}
+
+.background-img {
+    width: 100%;
+}
