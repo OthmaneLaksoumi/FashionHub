@@ -1,2 +1,4 @@
 # FashionHub
-Ce brief met l'accent sur la conception de maquettes et la création de sites web pour une marque de mode, en se concentrant sur la réalisation de la page d'accueil, du catalogue de produits, et de la page d'inscription, en utilisant les langages HTML, CSS, et JavaScript.
+Ce projet se focalise sur la conception de maquettes et le développement de sites web pour une marque de mode. L'objectif principal est de concevoir la page d'accueil, le catalogue de produits ainsi que la page d'inscription. Cette tâche est réalisée en utilisant les langages HTML, CSS et JavaScript.
+
+#Demo: https://othmanelaksoumi.github.io/FashionHub/
